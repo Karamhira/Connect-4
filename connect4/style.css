@@ -1,0 +1,275 @@
+*{
+  margin: 0;
+  padding : 0;
+  box-sizing : border-box;
+  font-family:'Nunito',san-serif;}
+
+body{
+  margin:0;
+}
+
+h1{
+  text-align:center;
+  font-size:30px;
+  padding-top: 20px;
+  font-family:'Nunito',san-serif;
+  margin-bottom: 20px;
+}
+
+.header{
+  margin: 0 auto;
+  display:block;/* positions the left edge of the element at the center of the page */  
+}
+
+#board{
+  height:540px;
+  width:630px;
+  background-color:blue;
+  border: 10px solid navy;
+  margin:0 auto;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+#Current-Player{
+  font-size:px;
+}
+
+.checker {
+  height: 75px;
+  width: 75px;
+  border: 5px solid navy;
+  border-radius: 50%;
+  background-color: white;
+  padding:5px;  
+  margin: 5px;
+}
+
+.red-piece{
+  background-color:red;
+  border: 3px solid darkred;
+}
+
+.yellow-piece{
+  background-color:yellow;
+  border: 3px solid #8B8000;
+}
+
+#winner, #Current-Player{
+  text-align:center;
+}
+
+.Welcome{
+  height:100vh;
+  background: url('images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  align-items: center;
+  border:3px solid black;
+  width: 400px; 
+  height:400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background:#e6e6e6;
+  justify-content: center;
+}
+
+img{
+  max-width: 350px;
+  margin-bottom: 35px;
+}
+
+a{
+  text-decoration: none;
+  color:white;  
+}
+
+.home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top:15%;
+  margin-bottom:15%;
+}
+
+.Play ,.play-again{
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 60px;
+  font-size: 20px;
+  transition: 0.4s;
+  border-radius: 80px;
+  background-color: #b10000;
+  color: white;
+  border: none;
+}
+
+.playc{
+  margin-bottom:10px;
+}
+
+.rule, .instructs, .home-botton{
+  color: white;
+  width:120px;
+  text-align:center;
+  padding: 7px 0px;
+  margin-bottom:10px;
+  text-decoration: none;
+  transition: 0.4s;
+  border-radius:80px;
+  background-color: #565656;
+  color: white;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.rule:hover{
+  background-color :darkgrey;
+}
+
+.instructs:hover{
+  background-color :darkgrey;
+}
+
+.Play:hover{
+  background-color:#ff0000 ;
+}
+
+.instructions, .rules {
+  display: none;
+}
+
+.instructions.visible, .rules.visible {
+  display: block;
+}
+
+.home.hidden {
+  display: none;
+}
+
+.game {
+  position: fixed;
+  top: 0;
+  justify-content:center;
+  align-content:center;
+  z-index: 1;
+  width:100%;
+  height:100%;
+}
+
+.end {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 100vh;
+  width:100%;
+}
+
+.container2 {
+  align-items: center;
+  justify-content: center;
+  border:3px solid black;
+  text-align:center;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height:400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background:#e6e6e6;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top:10%;
+  margin-bottom:10%;
+}
+
+
+.end.visible {
+  display: flex;
+  z-index:1000;
+}
+
+.end.hidden {
+  display: none;
+  margin-top:10%;
+  margin-bottom:10%;
+}
+
+.game-page{
+  height:100%;
+  width:100%;
+  align-content:center;
+  justify-content:center;
+  position:relative;
+}
+
+.ending{
+  padding-top:0px;
+  margin-bottom:10px;
+}
+
+.in-game{
+  margin-bottom:20px;
+}
+
+
+.play-again{
+  margin-bottom:7px;
+  margin-top:7px;
+}
+
+.rules-back-button, .instructions-back-botton {
+  color:white;
+  background: maroon;
+  padding: 10px 30px;
+  margin-top: 20px;
+  cursor:pointer;
+  border-radius:10px;
+  border: 1px solid black;
+}
+
+.rules-back-button:hover, .instructions-back-botton:hover{
+  background-color:red;
+}
+
+.rules, .instructions{
+  align-content:center;
+  justify-content:center;
+  display: none;
+  flex-direction: horizontal;
+  text-align:center;
+}
+
+.info-containers{
+  margin:15% 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+
+.info-container{
+  margin:12% 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
